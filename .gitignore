@@ -1,0 +1,19 @@
+# Java
+*.class
+*.jar
+*.war
+*.nar
+*.ear
+hs_err_pid*
+replay_pid*
+# Build
+target/
+out/
+build/
+# IDEs
+.idea/
+.vscode/
+*.iml
+# OS
+.DS_Store
+Thumbs.db
