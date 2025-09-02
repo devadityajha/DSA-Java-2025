@@ -8,7 +8,7 @@ public class array {
 
 
 
-// Q.1  Two sum
+/// Q.1  Two sum
 // int arr [] = {4, 6, 9, 10, 5, 5};
 //         int x = 10;
 
@@ -21,7 +21,7 @@ public class array {
 //             }
 //         }
 
-// Q.2. Three sum
+/// Q.2. Three sum
 // int arr[] = {3, 4, 5, 12, 16, 8, 1};
 // int x = 16;
 // for(int i = 0; i<arr.length; i++){
@@ -36,7 +36,7 @@ public class array {
 // }
 
 
-// Q3. Find the unique no. of array which is not repeated
+/// Q3. Find the unique no. of array which is not repeated
 // int arr[] = {2, 4, 2, 5, 9, 7, 7, 5, 4};
 // for(int i = 0; i< arr.length; i++){
 //     for(int j = i+1; j< arr.length; j++){
@@ -63,7 +63,7 @@ public class array {
 
 
 
-// Q 4. Find the second element in the given array
+/// Q 4. Find the second element in the given array
 
 // 1st APPROACH WITH INBUILT FUNCTION
 
@@ -119,23 +119,48 @@ public class array {
 
 // 4th APPROACH WITH 1 LOOP--Ideal Approach
 
-int arr [] = {4, 9, 0, 3, 2, 10, 7};
+// int arr [] = { 5, 0, 3, 2, 1, 9, 7};
 
-int max = Integer.MIN_VALUE;
-int secondMax = Integer.MIN_VALUE;
+// int max = Integer.MIN_VALUE;
+// int secondMax = Integer.MIN_VALUE;
 
-for (int i = 0; i < arr.length; i++) {
-    if (arr[i] > max) {
-        secondMax = max;
-        max = arr[i];
-    } else if (arr[i] > secondMax && arr[i] != max) {
-        secondMax = arr[i];
-    }
-};
+// for (int i = 0; i < arr.length; i++) {
+//     if (arr[i] > max) {
+//         secondMax = max;
+//         max = arr[i];
+//     } 
+//     else if (arr[i] > secondMax && arr[i] != max) {
+//         secondMax = arr[i];
+//     }
+// };
 
-System.out.println(max);
-System.out.println(secondMax);
+// System.out.println(max);
+// System.out.println(secondMax);
    
+
+
+/// Q. 6 Find an array of integers return the first value that is repeating in the array;
+int arr [] = {  0, 3, 2, 4, 4, 10, 9, 7, };
+
+
+int repeat = -1;
+boolean found = false;
+
+for(int i = 0; i<arr.length; i++){
+    for(int j = i+1; j<arr.length; j++){
+        if(arr[i] == arr[j]){
+            repeat = arr[i];
+            found = true;
+           
+            break;
+        }
+    }
+    if(found) break;
+    
+    
+}
+System.out.println(repeat);
+
 
 
 
