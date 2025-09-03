@@ -140,30 +140,37 @@ public class array {
 
 
 /// Q. 6 Find an array of integers return the first value that is repeating in the array;
-int arr [] = {  0, 3, 2, 4, 4, 10, 9, 7, };
+// int arr [] = {  0, 3, 2, 4, 4, 10, 9, 7, };
 
 
-int repeat = -1;
-boolean found = false;
+// int repeat = -1;
+// boolean found = false;
 
-for(int i = 0; i<arr.length; i++){
-    for(int j = i+1; j<arr.length; j++){
-        if(arr[i] == arr[j]){
-            repeat = arr[i];
-            found = true;
+// for(int i = 0; i<arr.length; i++){
+//     for(int j = i+1; j<arr.length; j++){
+//         if(arr[i] == arr[j]){
+//             repeat = arr[i];
+//             found = true;
            
-            break;
-        }
+//             break;
+//         }
+//     }
+//     if(found) break;
+    
+    
+// }
+// System.out.println(repeat);
+
+// 2nd Approach  COMPLEXITY- (O(n log n))
+int arr [] = {  0, 3, 2, 4, 4, 10, 9, 7, };
+Arrays.sort(arr);
+int repeat = -1;
+for(int i = 1; i< arr.length; i++){
+    if(arr[i] == arr[i-1]){
+        repeat = arr[i];
     }
-    if(found) break;
-    
-    
 }
 System.out.println(repeat);
-
-
-
-
 
 
 
