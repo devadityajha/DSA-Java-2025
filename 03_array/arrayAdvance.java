@@ -71,7 +71,6 @@ public class arrayAdvance {
             
 //// Q. 5 Given an array and multiple queries (l, r), find the sum of elements between indices l and r (inclusive).
 
-
 // int arr [] = {2, 4, 1, 3, 4, 6, 10};
 // int n = arr.length;
 // int prefix [] = new int[n];
@@ -86,52 +85,34 @@ public class arrayAdvance {
 // int sum = prefix[r] - prefix[l-1];
 // System.out.println(sum);
 
-         
-        
-//// Q. 6 Subarray Sum Equals K 
-//        int arr [] = {2, 4, 1, 3, 4, 6, 10};
-//        int k = 10;
-//        int count= 0;
-//        Arrays.sort(arr);
 
+
+// //// Q.3 Two Sum in Sorted Array using 2 pointers
+//        int arr [] = {2, 4, 1, 3, 4, 6, 10};
+//        int x = 10;
+//        Arrays.sort(arr);
 //        int n = arr.length;
 //        int start = 0;
 //        int end = n-1;
 //        while(start<end){
 // int sum = arr[start] + arr[end];
-// if(sum>k){
+// if(sum==x){
+//     System.out.println( arr[start] +   " + " + arr[end] + " = " + x );
+//     break;
+// }else if(sum>x){
 //     end--;
 // }else{
 //     start++;
-// }
-//        }
-
-
-
+// };
+// };            
+  
 
 
 
 
 
                                             
-//// Q.3 2 sum using 2 pointers
-         int arr [] = {2, 4, 1, 3, 4, 6, 10};
-       int x = 10;
-       Arrays.sort(arr);
-       int n = arr.length;
-       int start = 0;
-       int end = n-1;
-       while(start<end){
-int sum = arr[start] + arr[end];
-if(sum==x){
-    System.out.println( " arr[start] + arr[end]"  );
-    break;
-}
-else if(sum>x){
-    end--;
-}else{
-    start++;
-}
+
 
 
 

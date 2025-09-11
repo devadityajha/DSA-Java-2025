@@ -1,3 +1,3 @@
- else if (arr[i] > secondMax && arr[i] != max) {
-        secondMax = arr[i];
-    }
+if(sum==x){
+    System.out.println( " arr[start] + arr[end]"  );
+    break;
