@@ -1,4 +1,4 @@
-### Que done attempt yet -- Brute force
+### Que done attempt yet -- `Brute force`
 
 1. 2 sum
 2. 3 sum
@@ -14,14 +14,22 @@
 12. Count the no. of elements are strictly greater than value x;
 13. find the maximum and minimum elment of array
 
-### 6 Sep ArrayAdvance.java- Optimised approach
+### 6 Sep ArrayAdvance.java- `Optimised approach`
 
-1. Rotate the array by k element
-2. Reverse the Array
-3. Left Rotate Array
+1. Reverse the Array
+2. Rotate the array by k element to the right
+3. Left Rotate Array`(in noteboook only)`
 
-### 8 sep ArrayAdvance.java Optimised approach
+### 8 sep ArrayAdvance.java `Optimised approach`
 
-1. 2 Sum in Sorted Array using 2 pointers
-2. Given an array and multiple queries (l, r), find the sum of elements between indices l and r (inclusive)- Prefix Sum Pattern
-3.
+3. Given an array and multiple queries (l, r), find the sum of elements between indices l and r (inclusive)- Prefix Sum Pattern.
+4. 2 Sum in Sorted Array using 2 pointers
+
+### 11 sept ArrayAdvance.java
+
+`Direct Indexing (Presence Array)`  
+5. Check if number is present in array or not---`Direct Indexing (Presence Array)`.
+
+6. Find the element that occurs the most (mode of array).
+
+7. Find all duplicates in the array.

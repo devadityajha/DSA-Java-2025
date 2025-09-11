@@ -2,14 +2,14 @@ import java.util.Arrays;
 
 public class arrayAdvance {
     public static void main(String[] args) {
-       //// Q1.Print Array in reverse order
+       //// Q.Print Array in reverse order
        
     //    int arr [] = {23, 45, 56, 67, 78, 89};
     //    for(int i = arr.length-1; i>=0; i--){
     //     System.out.println(arr[i]);
     //    }
       
-       //// Q.2 Reverse the Array
+       //// Q.1 Reverse the Array
     //    int arr [] = {23, 45, 65, 67, 79, 54, 90};
     //     int start = 0;
     //     int end = arr.length-1;
@@ -27,7 +27,7 @@ public class arrayAdvance {
 
 
         
-        //// Q. 4 Rotate the array by k element to the right 
+        //// Q. 2 Rotate the array by k element to the right 
 //         int arr[] = {23, 25, 16, 49, 93, 6, 8, 4};  //  expected output = 684, 23 25 16 49 93
 //         int k = 3;
 //         int n = arr.length;
@@ -69,7 +69,7 @@ public class arrayAdvance {
 
 
             
-//// Q. 5 Given an array and multiple queries (l, r), find the sum of elements between indices l and r (inclusive).
+//// Q. 3 Given an array and multiple queries (l, r), find the sum of elements between indices l and r (inclusive).
 
 // int arr [] = {2, 4, 1, 3, 4, 6, 10};
 // int n = arr.length;
@@ -87,7 +87,7 @@ public class arrayAdvance {
 
 
 
-// //// Q.3 Two Sum in Sorted Array using 2 pointers
+// //// Q.4 Two Sum in Sorted Array using 2 pointers
 //        int arr [] = {2, 4, 1, 3, 4, 6, 10};
 //        int x = 10;
 //        Arrays.sort(arr);
@@ -106,17 +106,80 @@ public class arrayAdvance {
 // };
 // };            
   
+      
+//// Q. 5 Check if number is present in array or not  --Optimized approach
+/// Approach name: Direct Indexing (Presence Array)
+// int arr [] = {3, 5, 8, 2, 9, 2, 8, 44, 32};
+// int q = 3;
+// int queries [] = {2, 4, 3};
+// int freq [] = new int [1000005];
+// for(int i = 0; i< arr.length; i++){
+//     freq[arr[i]]++;
+// }                  
+
+// for(int i = 0; i< q; i++){
+//     int x = queries[i];
+//     if(freq[x]>0){
+//         System.out.println("Yes  " + x + " is present");
+//     }else{
+//         System.out.println("no");
+//     }
+// }
+
+
+//// Q. 6 Find the element that occurs the most (mode of array)
+///   Approach name: Direct Indexing (Presence Array)
+
+// int arr [] = {300, 5, 8, 2, 9, 2,8, 44, 3,3, 32};
+
+// int count[] = new int [100005];
+
+// for(int i = 0; i<arr.length; i++){
+//     count[arr[i]]++;
+// };
+// int maxelement = arr[0];
+// int maxcount = count[arr[0]] ;
+// for(int i = 1; i<arr.length; i++){
+//     // int element = arr[i];
+//     if(count[arr[i]] > maxcount ){
+//         maxcount= count[arr[i]] ;
+//         maxelement = arr[i];
+//     }
+// }
+
+// System.out.println(maxcount);
+// System.out.println(maxelement);
+
+
+//// Q. 7 Find all duplicates in the array
+
+
+// int arr [] = {2, 3, 4, 4, };
+// int count [] = new int [100005];
+
+// for(int i = 0; i<arr.length; i++){
+//     count[arr[i]]++;
+// }
+
+// for(int i =0; i<count.length; i++){
+  
+//     if(count[i] >= 2 ){
+//         System.out.println(i);
+//     }
+// }
 
 
 
 
-
-                                            
-
-
-
-
-
+////First missing number (in range 1..N)
+// Patterns samjhne hai ki isme 3 type ke patterns hote hai aur teeno kin kin type ke questions mein hote hai 
+// most important kon se wala pattern hai like mostly kon sa wala pucha jata hai interviews mein 
+// kaise pehchaane ki kon sa wala patterns use hoga 
+// jitne que ab tak kiye unn sabko 2-2 baar repeat krne kaa
+// copy array wale bhi kuch questions kar le 
+// YE PUCH KI AUR KIS KIS TYPE KE QUESTIONS MEIN YE SAARE PATTERNS USE HOTE HAI 
+// ACHHE SE SAMJH AB SARE QUESTIONS AUR
+// LEET CODE WALA QUESTION SAMJH KR KAR.
 
 
 
