@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.*;
 
 public class arrayAdvance {
     public static void main(String[] args) {
@@ -171,17 +172,88 @@ public class arrayAdvance {
 
 
 
-////First missing number (in range 1..N)
-// Patterns samjhne hai ki isme 3 type ke patterns hote hai aur teeno kin kin type ke questions mein hote hai 
-// most important kon se wala pattern hai like mostly kon sa wala pucha jata hai interviews mein 
-// kaise pehchaane ki kon sa wala patterns use hoga 
-// jitne que ab tak kiye unn sabko 2-2 baar repeat krne kaa
-// copy array wale bhi kuch questions kar le 
-// YE PUCH KI AUR KIS KIS TYPE KE QUESTIONS MEIN YE SAARE PATTERNS USE HOTE HAI 
-// ACHHE SE SAMJH AB SARE QUESTIONS AUR
-// LEET CODE WALA QUESTION SAMJH KR KAR.
 
 
+// Q. 8 Find duplicate elements in array-- only one duplicate 
+
+// int arr [] = {2, 3, 5, 7, 7 };
+// int n = arr.length;
+
+// int frequency [] = new int [10005];
+// for(int i = 0; i< n; i++){
+// frequency[arr[i]]++;
+// }
+
+// for(int i =0; i<frequency.length; i++){
+  
+//     if(frequency[i] >= 2 ){
+//         System.out.println(i);
+//     }
+// }
+
+
+
+// Q. 9 Contains Duplicate (boolean/hashset)
+// Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
+
+// int nums[] = { 4, 4, 6, 7, 2};
+// int frequency [] = new int [100005];
+// boolean check = false;
+// for(int i = 0; i<nums.length; i++){
+//     frequency[nums[i]]++;
+//     if(frequency[nums[i]]  > 1 ){
+//         check = true;
+        
+//     }
+    
+// }
+// System.out.println(check);
+
+
+
+// Q. 10 Missing Number (presence/frequency + sum/XOR optimized)---- LC 268---But not  optimized approach
+
+// int nums [] = {2, 3,0, 1};
+// int n = nums.length;
+// boolean present [] = new boolean [n+1];
+// for(int i =0; i< n; i++){
+// present[nums[i]] = true; 
+// }
+
+// for(int i = 0; i< n+1; i++){
+// if(!present[i]){
+//     System.out.println(i);
+// }
+// }
+
+
+
+
+// Q. 11 Find All Numbers Disappeared in an Array----LC 448-- But not optimized approach
+
+// int nums [] = {2, 3, 3, 4,5,6,4,8};
+// List <Integer>  result = new  ArrayList<>(); 
+// int n=  nums.length;
+// boolean present []= new boolean [n+1];
+
+// for(int i = 0; i< nums.length; i++){
+//     present[nums[i]] = true;
+// }
+
+// for(int i =1; i< n+1; i++){
+//     if(!present[i]  ){
+//         result.add(i);
+//     }
+// }
+// System.out.println(result);  
+
+
+
+// LC 217 – Contains Duplicate (boolean/hashset) done
+// LC 268 – Missing Number (presence/frequency + sum/XOR optimized) done
+// LC 448 – Find Disappeared Numbers (boolean + negation trick) done
+// LC 347 – Top K Frequent Elements (frequency + heap) 
+// LC 169 – Majority Element → frequency / Boyer-Moore.
 
 
 

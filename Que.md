@@ -28,8 +28,20 @@
 ### 11 sept ArrayAdvance.java
 
 `Direct Indexing (Presence Array)`  
-5. Check if number is present in array or not---`Direct Indexing (Presence Array)`.
+5. Check if number is present in array or not
 
 6. Find the element that occurs the most (mode of array).
 
-7. Find all duplicates in the array.
+7. Find all duplicates in the array. `l.c 442`
+
+### 12 Sept
+
+`Direct Indexing (Presence Array)` Approach
+
+8. Find duplicate elements in array-- only one duplicate `l.c 287`
+
+### 14 Sept
+
+9. Contains Duplicate (boolean/hashset)--Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct. `LC 217---only in vs code`
+10. Missing Number-- `LC 268--should be done in o(1), but i used o(n) space complexity `
+11. Find All Numbers Disappeared in an Array----`LC 448--only in vs code also not optimized approach`
