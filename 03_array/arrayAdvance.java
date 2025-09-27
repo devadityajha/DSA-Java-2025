@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.*;
 
 public class arrayAdvance {
@@ -163,13 +162,10 @@ public class arrayAdvance {
 // }
 
 // for(int i =0; i<count.length; i++){
-  
 //     if(count[i] >= 2 ){
 //         System.out.println(i);
 //     }
 // }
-
-
 
 
 
@@ -193,7 +189,7 @@ public class arrayAdvance {
 
 
 
-// Q. 9 Contains Duplicate (boolean/hashset)
+// Q. 9 Contains Duplicate (boolean/hashset) LC- 217
 // Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
 
 // int nums[] = { 4, 4, 6, 7, 2};
@@ -227,8 +223,6 @@ public class arrayAdvance {
 // }
 
 
-
-
 // Q. 11 Find All Numbers Disappeared in an Array----LC 448-- But not optimized approach
 
 // int nums [] = {2, 3, 3, 4,5,6,4,8};
@@ -248,12 +242,76 @@ public class arrayAdvance {
 // System.out.println(result);  
 
 
-
 // LC 217 – Contains Duplicate (boolean/hashset) done
 // LC 268 – Missing Number (presence/frequency + sum/XOR optimized) done
 // LC 448 – Find Disappeared Numbers (boolean + negation trick) done
 // LC 347 – Top K Frequent Elements (frequency + heap) 
 // LC 169 – Majority Element → frequency / Boyer-Moore.
+
+// Q. 12  Top K Frequent Elements-----LC 347
+  int arr [] = {3, 5, 3, 5, 7, 3, 7, 9};
+    int k = 3;
+    int n = arr.length;
+    int frequency [] = new int [20001];
+    int offset = 10000;
+    for(int i = 0; i<n;i++){
+        int x = arr[i];
+        frequency[x+offset]++;
+    }
+    // Now the frequency array will looks like this
+// elements = { 0, 0, 0, 3, 0, 2, 0, 2, 0, 1, 0, 0, 0, 0, 0,   } 
+// index =    { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13   }
+
+// Nowtraverse in frequency array to make bucket array
+List<Integer> []  bucket = new List[n+1];
+// bucket array by default = {  null, null, null, null, null, null, null, null, null  }
+// after assign            = {  null(0), [1] = [9], [2]=[5,7], [3]=[3], null(4), , null(6), null, null,   }
+for(int i = 0; i< frequency.length; i++){
+    if(frequency[i]  >0 ){
+        int f = frequency[i];
+        int element = i-offset;
+        if(bucket[f] == null) bucket[f] =  new ArrayList<>(); // bucket[3] = 3rd index pe add kr dega then 2nd pe add krega
+        bucket[f].add(element);
+    }
+}
+
+// Now traverse in bucket array
+// bucket array looks like 
+// bucket[0] = null
+// bucket[1] = [9]
+/// bucket[2] = [5, 7]
+/// bucket[3] = [3]
+/// null
+/// null
+
+//Now traverse in bucket array
+int res [] = new int [k];
+int idx = 0;
+for(int i  = bucket.length-1; i> 0 && idx < k; i--){
+    if(bucket[i] != null){
+        for(int j = 0; j<bucket[i].size() && idx<k; j++ ){
+         res[idx] =   bucket[i].get(j);
+            idx++;
+        }
+    }
+}
+    System.out.println("Final Answer: " + Arrays.toString(res));
+ 
+
+// Q 13. Majority element Lc- 169
+// int nums []= { 2,2,1,1,1,2,2};
+// int n = nums.length;
+// int frequency [] = new int [n+1];
+// for(int i = 0; i<n;i++){
+// frequency[nums[i]]++;
+// }
+
+// for(int i =0; i<frequency.length; i++){
+//     if(  frequency[i] > n/2  ){
+//         System.out.println(i);
+//     }
+// }
+
 
 
 

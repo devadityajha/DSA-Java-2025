@@ -44,4 +44,16 @@
 
 9. Contains Duplicate (boolean/hashset)--Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct. `LC 217---only in vs code`
 10. Missing Number-- `LC 268--should be done in o(1), but i used o(n) space complexity `
-11. Find All Numbers Disappeared in an Array----`LC 448--only in vs code also not optimized approach`
+11. Find All Numbers Disappeared in an Array----`LC 448--in vs code also not optimized approach`
+
+### 17 Sept
+
+12. Top k Frequent--`LC 347 in vs code`- `direct indexing approach`
+13. Contains Duplicate/Major element-- `Lc 169 in vs code - direct indexing approach`
+
+### 25 September twoPointers.java `Two pointers and slow & fast pointers approach`
+
+1. Return a non decreasing order sorted array
+2. Remove Duplicates from Sorted Array---- `lc 26 in vs code with slow & fast pointers approach`
+3. Remove Element-- `LC 27 in vs code`
+4.

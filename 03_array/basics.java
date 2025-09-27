@@ -5,14 +5,14 @@ public static void main(String[] args){
 
      
 
-// q1. find the sum of all element in array
-    int arr[] = {1, 5, 4};
-    int sum = 0; 
-    for(int i = 0; i<arr.length; i++){
-        sum = sum + arr[i];
+// // q1. find the sum of all element in array
+//     int arr[] = {1, 5, 4};
+//     int sum = 0; 
+//     for(int i = 0; i<arr.length; i++){
+//         sum = sum + arr[i];
         
-    }
-    System.out.println(sum);
+//     }
+//     System.out.println(sum);
      
 // q2.  search the given element x in array. If present then rturn the index else return -1
 // int arr[] = {1, 5, 3, 10, 12, 4};
@@ -70,7 +70,6 @@ public static void main(String[] args){
 
 // }
 // System.out.println(count);
-
 
 
 
